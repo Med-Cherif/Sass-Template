@@ -1,0 +1,39 @@
+%flexBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h2{
+    font-size: 2.5rem;
+    color: #fff;
+}
+.span{
+    display: block;
+    width: 70px;
+    height: 2px;
+    background: $maincolor;
+    margin: auto;
+    margin-top: 10px;
+}
+.p{
+    margin: 25px 0;
+    color: #c9c5bd;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+.btn{
+    @include inlineBlock();
+    padding: 8px 20px;
+    background: $maincolor;
+    color: #c9c5bd;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+    @include Trans();       
+    &:hover{
+        background: #c9c5bd;
+        color: $maincolor;
+    }
+}

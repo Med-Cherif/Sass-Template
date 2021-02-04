@@ -1,0 +1,30 @@
+@mixin Trans {transition: all .5s ease-in-out};
+@mixin upper {text-transform: uppercase};
+@mixin inlineBlock {display: inline-block};
+@mixin textCenter {text-align: center};
+@mixin pd-y {padding: 100px 0;}
+
+/* Media */
+@mixin Xs {
+    @media (max-width: 575px) {
+        @content;
+    }
+}
+
+@mixin Sm {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin Md {
+    @media (min-width: 768px) and (max-width: 1170px) {
+        @content; 
+    }
+}
+
+@mixin Lg {
+    @media (min-width: 1171px) {
+        @content;
+    }
+}
